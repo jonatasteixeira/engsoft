@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Engenharia de Software - Módulo 4</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Home made custom -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- To insert header and footer -->
+	<div id="hidden" style="display:none;">
+		<div id="header">
+			<div id="header-left">HEADER-LEFT</div>
+			<div id="header-right">HEADER-RIGHT</div>
+			<div id="footer-left">FOOTER-LEFT</div>
+			<div id="footer-right">FOOTER-RIGHT</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<!-- Insert into each .slide-background -->
+	<script type="text/javascript">
+		var header = $('#header').html();
+		if ( window.location.search.match( /print-pdf/gi ) ) {
+			Reveal.addEventListener( 'ready', function( event ) {
+				$('.slide-background').append(header);
+			});
+		}
+		else {
+			$('div.reveal').append(header);
+	   }
+	</script>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>4.1 - ETESTES DE SOFTWARE</section>
+                <section>4.1.1 - Testes de desenvolvimento.</section>
+                <section>Desenvolvimento dirigido a testes.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>4.2 - CASOS DE TESTES DE SOFTWARE</section>
+				<section>4.2.1 - Testes de releases.</section>
+				<section>4.2.2 - Testes de usuário.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>4.3 - EVOLUÇÃO DE SOFTWARE</section>
+				<section>4.3.1 - Processos de evolução de software.</section>
+				<section>4.3.2 - Dinâmica de evolução de programas.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>4.4 - MANUTENÇÃO DE SOFTWARE</section>
+				<section>4.4.1 - Manutenção de programas.</section>
+				<section>4.4.2 - Gerenciamento de sistemas legados.</section>
+			</section>			
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
+

@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Engenharia de Software - Módulo 1</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Home made custom -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- To insert header and footer -->
+	<div id="hidden" style="display:none;">
+		<div id="header">
+			<div id="header-left">HEADER-LEFT</div>
+			<div id="header-right">HEADER-RIGHT</div>
+			<div id="footer-left">FOOTER-LEFT</div>
+			<div id="footer-right">FOOTER-RIGHT</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<!-- Insert into each .slide-background -->
+	<script type="text/javascript">
+		var header = $('#header').html();
+		if ( window.location.search.match( /print-pdf/gi ) ) {
+			Reveal.addEventListener( 'ready', function( event ) {
+				$('.slide-background').append(header);
+			});
+		}
+		else {
+			$('div.reveal').append(header);
+	   }
+	</script>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>
+                        <h3> 1.1 Introdução engenharia de software </h3>
+    
+                        <p>
+                            Software Engineering Body of Knowledge (SWEBOK) surgiu através de uma parceria entre o IEEE, 
+                            a Computer Society e ACM a fim de promover a profissionalização da Engenharia de Software e 
+                            criar um consenso sobre as áreas de conhecimento da Engenharia de Software e seu escopo.
+                        </p>
+                        <p><small>Você pode baixar gratuitamente o SWEBOK<a href=https://www.computer.org/education/bodies-of-knowledge/software-engineering> aqui. </a></small></p>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+                        ## 1.1.1 - Desenvolvimento do profissional de software
+
+                        * Desenvolver softwares e apps
+                        * Gerenciar projetos ligados aos softwares
+                        * Arquitetar o design estrutural dos programas
+                        * Realizar testes nos sistemas
+					</textarea>
+				</section>
+				<section>
+                        <h3>1.1.2 - Ética na engenharia de software</h3>
+                        <p>
+                            Análise de como problemas evitáveis podem resultar de um sistema de TI e, em seguida, 
+                            tomar medidas realistas para evitá-los.
+                        </p>
+                        <p><small>
+                            <ul>
+                            <li><a href=https://veja.abril.com.br/tecnologia/exposto-a-internet-robo-da-microsoft-vira-racista-em-1-dia/>"Exposto à internet, robô da Microsoft vira racista em 1 dia".</a> Veja, 2016.</li>
+                            <li><a href=https://veja.abril.com.br/tecnologia/hitchbot-o-robo-mochileiro-que-dependida-da-bondade-humana-terminou-sua-viagem-decapitado/>"HitchBOT, o robô mochileiro, terminou sua viagem decapitado".</a> Veja, 2015.</li>
+                            <li><a href=https://g1.globo.com/economia/tecnologia/noticia/2019/01/17/novo-vazamento-de-dados-tem-773-milhoes-de-enderecos-de-e-mail-descubra-se-o-seu-foi-comprometido.ghtml>"Coleção de dados vazados tem 773 milhões de endereços de e-mail".</a> Globo.com, 2019.</li>
+                        </ul>
+                        </small></p>
+                </section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>
+                    <h3>1.2 - MODELOS DE DESENVOLVIMENTO DE SOFTWARE</h3>
+
+                    <p>
+                        Existem diversas atividaes que precisam ser executadas no desenvolvimento de software, tais como:
+                        Levantamento de requisitos, codificação, testes e operação.
+                        Estas atividaes são organizadas e representadas por alguns modelos.
+                    </p>
+
+                </section>
+				<section>
+                    <h3>1.2.1 - Modelos de processos de software. </h3>
+                    Os principais modelos discutidos são:
+                    <ul>
+                        <li>Modelo em cascata</li>
+                        <li>Modelo evolucionário</li>
+                        <li>Modelo espiral</li>
+                        <li>Modelo incremental</li>
+                        <li>Modelo RAD</li>
+                        <li>Modelo Desenvolvimento Formal de Sistemas</li>
+                        <li>Modelo em V</li>
+                        <li>Modelo de Processo Unificado</li>
+                        <li>Modelo Praxis</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>1.2.1 - Modelos de processos de software. </h3>
+                    <img src="images/watterfall.jpeg"/> 
+                    <p><small>
+                        O primeiro modelo documentado foi o <a href="files/royce1970.pdf">Modelo em Cascata</a> em 1970 por Royce.
+                    </small></p>
+                </section>
+				<section>
+                    <h3>1.2.2 - Atividades do processo</h3>
+                    <p>
+                        Assim como descrito por Royce, as principais atividades do desenvolimento de softeware são:
+                        <br><br>
+                        Levantamento de requisitos, Análise de requisitos, Implementação, Testes, Implantação e Operação.
+                        <br><br>
+                        Estas atividades são comum em quase todos os modelos de desenvolvimento de software
+                    </p>
+                </section>
+				<section>
+                    <h3>1.2.3 - Mudanças</h3>
+                    <p>
+                        Mudanças de software são oriundas de alterações (funcionais ou não funcionais) em um sistema de 
+                        informação e fazem parte da gestão de configuração de de um software. <br>
+                    </p>
+                    <p>
+                        <small> 
+                            <ul>
+                                <li>A mudança é necessária?</li>
+                                <li>Quais requisitos e intens de configuração serão alterados?</li>
+                                <li>O que está mudança está alterando?</li>
+                                <li>Quanto tempo vai levar, quais os riscos e o custo envolvido?</li>
+                                <li>A mudança é viável?</li>
+                            </ul>
+                            <br><br>
+                            O framework ITIL apresenta algumas ferramentas para gestão de mudanças em TI.
+                        </small>
+                    </p>
+                </section>
+				<section>
+                    <h3>1.2.4 - Processo Unificado da Rational (RUP)</h3>
+                    <p>
+                        O RUP decompoe o processo em 4 fases e baseia-se nos 4Ps (Pessoas, Projeto, Produto e Processo)
+                    </p>
+                    <img src="images/rup.jpg"/>
+                </section>
+                <section>
+                    <h3>1.2.4 - Processo Unificado da Rational (RUP)</h3>
+                    <small style="text-align: left;">
+                        <h4>Fase Iniciação:</h4> 
+                        <p>São levantados os requisitos e transformados em casos de uso.</p>
+                        <br>
+                        <h4>Fase Elaboração:</h4> 
+                        <p>A arquitetura do sistema é especificada junto com a modelagem de negócio, começa-se a elaboraçã 
+                            do manual do usuário e então o projeto é criado (escopo, prazo e custo).</p>
+                        <br>
+                        <h4>Fase Construção:</h4> 
+                        <p>Codificação e testes.</p>
+                        <br>
+                        <h4>Fase Transição:</h4>
+                        <p>Entrega do software em produção, acompanhamento do software e treinamento do usuário.</p>
+                    </small>
+                </section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>
+                    <h3>1.3 - MÉTODOS ÁGEIS DE DESENVOLVIMENTO DE SOFTWARE</h3>
+
+                    <p>Em 2001 foi criado o <a href="https://www.manifestoagil.com.br/">Manifesto Ágil</a> que se baseia em 4 pilares:</p>
+
+                    <ul>
+                        <li>Indivíduos e interações > processos e ferramentas</li>
+                        <li>Software funcionando > documentação abrangente</li>
+                        <li>Colaboração com cliente > negociação de contratos</li>
+                        <li>Responder a mudanças > seguir um plano</li>
+                    </ul>
+
+                    </section>
+				<section>
+                    <h3>1.3.1 - Programação Extrema (XP) </h3>
+                    <p>Extreme Programming (XP) é uma metodologia ágil de desenvolvimento de software.</p>
+
+                    <ul>
+                        <li>Feedback constante</li>
+                        <li>Incremental</li>
+                        <li>Encoraja a comunicação</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>1.3.1 - Programação Extrema (XP) - Práticas </h3>
+                    <small>
+                        <ul>
+                            <li>Planning Game - Planejamento Semanal / Histórias de usuários </li>
+                            <li>Small Releases - Liberação de pequenas versões funcioanis</li>
+                            <li>Metaphor - Use de metáforas para explicar ao cliente o funcionamento do software</li>
+                            <li>Simple Design - Codifique apenas o que é solicitado pelo cliente</li>
+                            <li>Customer Tests - Testes de aceitação são realizados pelo cliente</li>
+                            <li>Sustainable Pace - A semana possui apenas 40hrs</li>
+                            <li>Collective Ownership - Todos são donos do produto</li>
+                            <li>Pair Programming - Programação em pares visa melhorar a qualidade do código</li>
+                            <li>Coding Standards - Padrões de nomes, tabulações, etc</li>
+                            <li>Test Driven Development - Codificação orientada à Testes</li>
+                            <li>Integração Contínua - Garante que sempre haverá uma versão integrada do software</li>
+                        </ul>   
+                    </small>
+                </section>
+                <section>
+                    <h3>1.3.1 -  Scrum </h3>
+                    <p>Scrum é uma metodologia ágil para gestão e planejamento de projetos de software</p>
+                    <small>
+                        <ul>
+                            <li>Projetos são dividos em interações chamados de Sprints.</li>
+                            <li>O estoque de trabalho é chamado de Product Backlog.</li>
+                            <li>No início de cada Sprint é feita uma reunião de Sprint Planning onde o Product Owner prioriza os itens do Product Backlog.</li>
+                            <li>A equipe seleciona as atividades que serão movidas do Product Backlog para o Sprint Backlog.</li>
+                            <li>Diariamente ocorre uma reunião de Daily Scrum para listar impedimentos e falar sobre o que foi feito ontem e o que será feito hoje.</li>
+                            <li>Ao final de um Sprint os resultados são apresentados na Sprint Review Meeting, e faz-se uma Sprint Retrospective.</li>
+                        </ul>
+                    </small>
+                </section>
+                <section>
+                    <h3>1.3.1 -  Scrum </h3>
+                    <img src="images/scrum.gif"/>
+                </section>
+            
+                <section>
+                    <h3>1.3.2 - Gerenciamento ágil</h3>
+                    <p> 
+                        O projeto é todo dividido em etapas menores, chamadas de iteração, que duram de 1 semana (XP) 
+                        até no máximo 4 (Scrum) e ao final de cada etapa há uma reavaliação das prioridades do projeto. <br>
+                        E um possível replanejamento da etapa que virá em sequência.
+                    </p>
+                </section>
+                <section>
+                    <h3>1.3.3 - Escalonamento de métodos ágeis</h3>
+                    <p>
+                        Times ágeis são enxutos, não maiores que 10 integrantes. Escalar métodos ágeis é um desafio constante de diversas empresas.
+                    </p>
+                    <ul>
+                        <li>LeSS - Large-Scale Scrum</li>
+                        <li>SAFe - caled Agile Framework</li>
+                        <li>DAD - Disciplined Agile Delivery</li>
+                        <li>Framework Spotify</li>
+                        <li>Framework Nexus</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>1.3.3 - Framework Spotify</h3>
+                    <iframe data-autoplay width="420" height="345" src="https://youtu.be/4GK1NDTWbkY"></iframe>
+                </section>
+
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>1.4 - ENGENHARIA DE REQUISITOS</section>
+				<section>1.4.1 - Requisitos funcionais e não funcionais. </section>
+				<section>1.4.2 - Documento de requisitos. </section>
+				<section>1.4.3 - Especificação de requisitos.</section>
+				<section>1.4.4 - Processos de engenharia de requisitos.</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>

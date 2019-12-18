@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Engenharia de Software - Módulo 2</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Home made custom -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- To insert header and footer -->
+	<div id="hidden" style="display:none;">
+		<div id="header">
+			<div id="header-left">HEADER-LEFT</div>
+			<div id="header-right">HEADER-RIGHT</div>
+			<div id="footer-left">FOOTER-LEFT</div>
+			<div id="footer-right">FOOTER-RIGHT</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<!-- Insert into each .slide-background -->
+	<script type="text/javascript">
+		var header = $('#header').html();
+		if ( window.location.search.match( /print-pdf/gi ) ) {
+			Reveal.addEventListener( 'ready', function( event ) {
+				$('.slide-background').append(header);
+			});
+		}
+		else {
+			$('div.reveal').append(header);
+	   }
+	</script>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>2.1 - ELICITAÇÃO DE REQUISITOS</section>
+				<section>2.1.1 - Elicitação, validação e gerenciamento de requisitos.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>2.2 - INTRODUÇÃO A MODELAGEM DE SISTEMAS</section>
+				<section>2.2.1 - Modelos de contexto.</section>
+				<section>2.2.2 - Modelos de interação.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>2.3 - MODELAGEM DE SISTEMAS</section>
+				<section>2.3.1 - Modelos estruturais.</section>
+				<section>2.3.2 - Modelos comportamentais.</section>
+				<section>2.3.3 - Engenharia dirigida a modelos.</section>
+			</section>
+			<section>
+				<!-- 7 MINUTOS -->
+				<section>2.4 - PROJETO DE ARQUITETURA</section>
+				<section>2.4.1 - Decisões de projeto de arquitetura.</section>
+				<section>2.4.2 - Visões de arquitetura.</section>
+			</section>			
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
